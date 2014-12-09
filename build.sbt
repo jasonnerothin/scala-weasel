@@ -3,7 +3,7 @@ name := "scala-weasel"
 
 //version := "1.0"
 
-organization := "com.gigaspaces.sbp"
+organization := "com.jasonnerothin.ga"
 
 // set the Scala version used for the project
 scalaVersion := "2.10.4"
