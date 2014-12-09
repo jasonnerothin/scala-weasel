@@ -14,14 +14,20 @@ scalaVersion := "2.10.4"
 // set the Scala test source directory to be <base>/test
 //scalaSource in Test := baseDirectory.value / "test"
 
-// add a test dependency on ScalaCheck
-libraryDependencies += "org.scalacheck" % "scalacheck_2.11" % "1.11.5"
-
 // add compile dependencies on some dispatch modules
 libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-classic" % "1.0.13",
   "ch.qos.logback" % "logback-core" % "1.0.13",
   "com.typesafe" % "config" % "1.2.1"
+)
+
+// test deps
+libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest" % "2.0" % "test",
+  "org.scalamock" %% "scalamock-scalatest-support" % "3.2.1" % "test",
+  "org.scalamock" % "scalamock-specs2-support_2.10" % "3.2.1" % "test",
+  "org.scalacheck" %% "scalacheck" % "1.11.5" % "test",
+  "junit" % "junit" % "4.11" % "test"
 )
 
 // Set a dependency based partially on a val.
